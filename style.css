@@ -237,3 +237,26 @@ header {
     background-color: #c955c9;
   }
   
+/* Adds media query to adjust the styles for smaller screens */
+@media screen and (max-width: 600px) {
+    /* Mobile styles for elements that don't have them */
+
+    /* Example: Mobile styles for the navbar links */
+    .navbar a {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    /* Example: Mobile styles for the header */
+    header {
+        padding: 10px;
+    }
+
+    /* Example: Mobile styles for the image container */
+    .image-container {
+        margin: 2px;
+        padding: 0 5px;
+    }
+
+    /* Add mobile styles for other elements as needed */
+}
