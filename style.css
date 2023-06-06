@@ -8,27 +8,40 @@
          url('/assets/fonts/Hachi_Maru_Pop/OFL.txt') format('woff');
   }
 
-/*Styles the navigation bar. The overflow: auto; property ensures that the content is displayed correctly*/
-.navbar {
+/*styles the navbar font and background color*/
+  .navbar {
     background-color: #64b6ac;
-    font-size: 20px; 
+    font-size: 20px;
     overflow: auto;
-}
-
-/*Styles the links within the navbar*/
-.navbar a {
+  }
+/*styles the navbar and make text white*/ 
+  .navbar a {
     float: left;
-    padding:12px;
+    padding: 12px;
     color: white;
-}
-
+  }
+  
+  /* Media query for screens smaller than 768px (typical mobile devices) */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .navbar a {
+      padding: 10px;
+    }
+  }
+  
 /*styles the image within tha text container*/
 #text-image {
-    max-width: 100%;
-    height: auto;   
-    border-radius: 50%;
-    border-style: solid;
-    border-color: #c0fdfb;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #c0fdfb;
+  max-width: 100%;
+  height: auto;
 }
 
 /*adds padding to the full width container*/
