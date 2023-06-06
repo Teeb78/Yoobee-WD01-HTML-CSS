@@ -49,8 +49,9 @@
     padding-left: 15px;
 }
 
-/*This styles the body element, sets the font, background image and controls its properties*/
+/*This styles the body element, sets the base font size, background image and controls its properties*/
 body {
+    font-size: 16px;  
     font-family: 'Hachi', sans-serif;
     margin: 0;
     padding: 0;
@@ -61,6 +62,13 @@ body {
     max-width: 100%;
     height: auto;   
   }
+
+  /* Adjust font size for smaller screens */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
 
 /*The style for the color, padding and alignment of header*/
 header {
@@ -110,6 +118,13 @@ header {
     border-color: #c0fdfb;
     max-width: 100%;
     height: auto; 
+}
+
+@media screen and (max-width: 768px) {
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
 }
 
 /*The style for the H1 element including alignment, margin, font weight & size and color*/
