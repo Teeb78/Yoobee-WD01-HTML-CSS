@@ -31,9 +31,8 @@ p {
   /* Media query for smaller screens */
   @media screen and (max-width: 600px) {
     body {
-      background-color: #64b6ac;
-      /* Background image for smaller screens 
-      background-image: url("/assets/images/forest-nature-background.jpg");*/
+      /* Background image for smaller screens */
+      background-image: url("/assets/images/forest-nature-background.jpg");
     }
   }
 
