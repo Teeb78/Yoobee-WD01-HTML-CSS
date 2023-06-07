@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
 }
@@ -24,7 +25,7 @@
   }
 }
 
-/* Styles for the dropdown menu */
+/* Styles for the dropdown menu and items */
 .dropdown-menu {
     position: absolute;
     z-index: 1;
@@ -85,7 +86,38 @@
     }
   }
 
-  /*styles the text alignment and padding for contact section on contact us page*/
+/*styling for gallery page*/
+/*The style for the gallery container element for Gallery page. Ensuring the images display in a grid with max 4 images in a row and a 10px gap*/
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+/*The styles the gallery items. Ensuring the images are in flexbox and centered*/ 
+.gallery-item {
+  display: flex;
+  justify-content: center;
+}
+
+/*The styles the images on gallery page. Setting margin, height, width and border radius for images*/ 
+.gallery-item img {
+  margin: 20px;
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/*adds media query to adjust the gallery image layout on smaller screens. Sets columns to autofit with min width of 200px and auto-rows to 200px*/
+@media screen and (max-width: 600px) {
+  .gallery-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+  }
+}
+
+/*styling for contact page*/
+/*styles the text alignment and padding for contact section on contact us page*/
 #contact {
   padding: 20px;
   text-align: center;
