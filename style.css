@@ -264,15 +264,14 @@ header {
 /*styling for contact page*/
 /*styles the text alignment and padding for contact section on contact us page*/
 #contact {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
  }
 
 /*styles the form on the contact us page with margin, max-width, padding, border-radius and font-weight*/
 #contact-form {
-   margin-left: 35%;
-   max-width: 400px;
-   padding: 20px;
+   margin: 0 auto;
+   max-width: 25%;
    border-radius: 5px;
    font-weight: bold;
 }
