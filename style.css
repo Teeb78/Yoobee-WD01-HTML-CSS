@@ -1,3 +1,6 @@
+/*Imports the Bootstrap CSS to provide some styles and components for website*/
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
 /*styles the image within tha text container*/
 #text-image {
   border-radius: 50%;
@@ -12,27 +15,17 @@
     padding-left: 15px;
 }
 
-/*This styles the body element, sets the base font size, background image and controls its properties
-body {
-    font-size: 16px;  
-    font-family: 'Hachi', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url("/assets/images/forest-nature-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top; 
-    max-width: 100%;
-    height: auto;   
-  }*/
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+
+}
   body {
     /* Default background image for larger screens */
     background-image: url("/assets/images/forest-nature-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    font-size: 16px;  
-    font-family: 'Hachi', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
   }
   
   /* Media query for smaller screens */
@@ -42,12 +35,6 @@ body {
       background-image: url("/assets/images/forest-nature-background.jpg");
     }
   }
-  /* Adjust font size for smaller screens */
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-}
 
 /*The style for the color, padding and alignment of header*/
 header {
@@ -57,6 +44,7 @@ header {
     text-align: center;
     max-width: 100%;
     height: auto; 
+  
   }
 
 /*The style for the color & font style*/
@@ -228,12 +216,14 @@ header {
   @media (max-width: 767px) {
     .navbar-nav {
       display: none;
+      color:#5f22d1; 
     }
   
     .navbar-nav.show {
       display: flex;
       flex-direction: column;
       padding-top: 1rem;
+      color:#5f22d1;
     }
   
     .navbar-toggler {
