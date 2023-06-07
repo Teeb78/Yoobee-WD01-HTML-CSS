@@ -1,110 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="this is a website about nature and includes, info, video link, an image gallery and contact option">
-        <title>Beautiful Nature</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
-      </head>
-      <body>
-        <!-- Navigation bar -->
-        <nav class="navbar navbar-expand-md">
-            <!-- Navbar brand and leaf logo -->
-          <a class="navbar-brand" href="index.html">
-            <i class="fas fa-leaf"></i> Beautiful Nature
-          </a>
-          <!-- Navbar buttons -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></button>
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Navbar links and icons to other pages -->
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home <i class="fas fa-home"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery <i class="fas fa-images"></i></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact <i class="fas fa-envelope"></i></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Navbar</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-        <!-- Full-width container with heading and text -->
-        <div class="full-width-container">
-            <div class="container text-lg-center">
-              <h1 id="welcome">Welcome to Beautiful Nature</h1><br>
-                <p>There is so much beauty in our world.</p>  
-                <p>Take some time to enjoy the images of the natural world on this site.</p>
-            </div>
-          </div> 
-<!-- container for youtube video and info -->
-<div class="gallery-item video">
-    <iframe width="500" height="300" src="https://www.youtube.com/embed/JruWsyyP9pw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-<br>
-<p id="video">If you'd like to enjoy more, please check out this incredible video. Enjoy!</p>
+</head>
+<body>
 
-  <!-- Image container that when one of the images is clicked on it send user to the images on the gallery page -->
-  <div class="image-container">
-    <a href="gallery.html">
-        <img src="/assets/images/picsum-photos-10.jpg" id="pics" alt="Nature Picture 1">
-      </a>
-    <a href="gallery.html">
-        <img src="/assets/images/picsum-photos-11.jpg" id="pics" alt="Nature Picture 2">
-    </a>
-    <a href="gallery.html">
-        <img src="/assets/images/picsum-photos-17.jpg" id="pics" alt="Nature Picture 3">
-    </a>      
-  </div>
-  
-  <!-- Text box container that has 2 columns of different sizes -->
-  <div id="text-box" class="container left-align">
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="text-container">
-          <h2>Relaxing Nature</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id turpis neque. Sed nec ligula sed urna hendrerit elementum. Donec semper tortor id neque dapibus aliquam.</p>
-        </div>
-      </div>
-      <div class="col-lg-8">
-        <div class="text-container">
-          <h2>Favourite places</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus dolorum illum hic. Dolorum expedita distinctio cum vero vel, magnam dignissimos autem ipsa atque architecto debitis excepturi incidunt sequi, perspiciatis quaerat reprehenderit sunt? Ex deserunt corporis praesentium corrupti. Optio ipsam harum ex ad accusantium, molestiae quas doloremque eveniet, suscipit, earum tenetur. </p>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-auto" href="#"> <i class="fas fa-leaf"></i> Natures Beauty</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="fas fa-home"></i> Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">
+                <i class="fas fa-images"></i> Gallery
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">
+                <i class="fas fa-envelope"></i> Contact
+              </a>
+            </li>
+          </ul>
+          
       </div>
     </div>
+  </nav>
+
+  <!-- Home Page Content -->
+  <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+    <h1>Hello World</h1>
+  </div>
+  
+  <div class="main">
+    <h2>Lorum Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
   </div>
 
-  <div class="full-width-container">
-    <div class="text-container">
-      <h2>So many wonders in the world</h2>
-<!--text container starts-->
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore libero repellat rerum consequuntur rem itaque magnam numquam et quam, optio sint? Dolorum, officiis. Laudantium, reiciendis. Libero et provident facere natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deserunt corporis praesentium corrupti. Optio ipsam harum ex ad accusantium, molestiae quas doloremque eveniet, suscipit, earum tenetur.</p>
-<!--image container starts-->
-<div class="box"><img src="/assets/images/picsum-photos-109.jpg" id="text-image" alt="Nature Image" style="float: right; margin: 10px"></div>
-</div>
-<!--image container ends-->
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero autem earum optio natus nemo obcaecati unde ullam excepturi doloremque alias sunt quod illum distinctio laborum rem quia consequatur eos ducimus, sint non harum ipsam facilis ab. Ex fugiat iste ipsam consectetur fuga dignissimos facere voluptatem aliquid esse est id enim corrupti eius laudantium, quae placeat at! Cumque ipsum laboriosam sunt excepturi aliquam veniam odit atque nulla. Minima nobis, quod perferendis fugit maiores ullam officia eos deleniti expedita hic odio possimus assumenda nesciunt dolorem nam laudantium sunt porro quia. Laboriosam, consectetur quibusdam aliquid perspiciatis ab, qui deserunt maxime aliquam rerum quos enim fugiat neque voluptatibus repudiandae fugit inventore molestiae beatae sit, et debitis possimus a. Quas minima necessitatibus sequi exercitationem quam aliquam provident. Distinctio vitae magni inventore, quidem laborum repellat tempore maxime doloribus esse dolor commodi, blanditiis ad eligendi in optio! Consectetur, totam nobis nam, tempore voluptatem eos modi autem minus sit magni accusamus aliquid ducimus veniam beatae, nulla dolor. Quis animi provident delectus praesentium molestiae rem aliquam facilis architecto sequi? Facere minima vero minus nostrum ipsam vel accusantium omnis in quod eaque quasi voluptatem consectetur dolor, nisi maiores reprehenderit. Nesciunt amet fuga eum at. Quis animi provident delectus praesentium molestiae rem aliquam facilis architecto sequi?</p>
-      </div>
+  <div class="right">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
   </div>
-  <!--text container ends-->
+</div>
+
+  <!-- Include Bootstrap JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
 
   <footer class="footer">
     <!-- Page footer -->
-    <div class="container text-center">
-      <span class="text-muted">© 2023 Beautiful Nature. All rights reserved.</span>
+    <div>
+      © 2023 Natures Beauty. All rights reserved.>
     </div>
   </footer>
   
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
