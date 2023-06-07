@@ -31,8 +31,9 @@ p {
   /* Media query for smaller screens */
   @media screen and (max-width: 600px) {
     body {
-      /* Background image for smaller screens */
-      background-image: url("https://static.vecteezy.com/system/resources/previews/000/550/499/original/cartoon-forest-hill-landscape-vector-nature-background-illustration.jpg");
+      background-color: #64b6ac;
+      /* Background image for smaller screens 
+      background-image: url("/assets/images/forest-nature-background.jpg");*/
     }
   }
 
