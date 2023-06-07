@@ -111,6 +111,16 @@ header {
     color: #5f22d1;
   }
 
+#gallery {
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  color: #5f22d1;
+}
+#gallerytext {
+  text-align: center;
+}
+
 /*styling for the youtube video*/
   .gallery-item.video {
     margin: auto;
