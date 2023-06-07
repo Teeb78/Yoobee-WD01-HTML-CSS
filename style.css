@@ -12,7 +12,7 @@
     padding-left: 15px;
 }
 
-/*This styles the body element, sets the base font size, background image and controls its properties*/
+/*This styles the body element, sets the base font size, background image and controls its properties
 body {
     font-size: 16px;  
     font-family: 'Hachi', sans-serif;
@@ -24,8 +24,24 @@ body {
     background-position: top; 
     max-width: 100%;
     height: auto;   
+  }*/
+  body {
+    /* Default background image for larger screens */
+    background-image: url("/assets/images/forest-nature-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 16px;  
+    font-family: 'Hachi', sans-serif;
   }
-
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 600px) {
+    body {
+      /* Background image for smaller screens */
+      background-image: url("/assets/images/forest-nature-background.jpg");
+    }
+  }
   /* Adjust font size for smaller screens */
 @media screen and (max-width: 600px) {
   body {
